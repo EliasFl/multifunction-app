@@ -10,8 +10,8 @@ const ButtonsContainer = (props) => {
   return (
     <div className="ButtonsContainer">
       <ChangeColorButton color={props.backgroundColor} className="button" onPressButton={props.onChangeBackgroundColor}/>
-      <ChangeTitleButton color={props.backgroundColor} />
       <PrimeNumberButton color={props.backgroundColor} />
+      <ChangeTitleButton color={props.backgroundColor} />
       <button style={{ backgroundColor: props.backgroundColor }}>Fill form</button>
       <div>
         <button style={{ backgroundColor: props.backgroundColor }}>Whatever</button>

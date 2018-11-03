@@ -7,7 +7,8 @@ import ButtonsContainer from './components/ButtonsContainer/ButtonsContainer';
 
 class App extends React.Component {
   state = {
-    backgroundColor: ''
+    title: 'Elias',
+    backgroundColor: '',
   };
 
   componentDidMount() {
@@ -29,7 +30,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h1 className="title">Elias</h1>
+        <h1 className="title">{this.state.title}</h1>
         <h4 className="subtitle">eliasflores13@outlook.com</h4>
         <ButtonsContainer
           onChangeBackgroundColor={this.changeBackgroundColor}

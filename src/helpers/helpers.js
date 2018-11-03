@@ -7,3 +7,20 @@ export function getRandomColor() {
   const randomColor = colors[Math.round(Math.random() * (colors.length - 1))];
   return randomColor;
 }
+
+function isPrime(num) {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return num !== 1;
+}
+
+export function getNextPrimeNumber(num) {
+  let nextNum = num + 1;
+  if (isPrime(nextNum)) {
+    return nextNum;
+  } 
+  return getNextPrimeNumber(nextNum);
+}
