@@ -4,7 +4,7 @@ class PrimeNumberButton extends Component {
   render() {
     return (
       <div>
-        <button>1</button>
+        <button style={{ backgroundColor: this.props.color }}>1</button>
       </div>
     );
   }

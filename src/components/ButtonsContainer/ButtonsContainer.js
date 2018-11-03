@@ -9,12 +9,12 @@ import PrimeNumberButton from '../PrimerNumberButton/PrimeNumberButton';
 const ButtonsContainer = (props) => {
   return (
     <div className="ButtonsContainer">
-      <ChangeColorButton className="button" />
-      <ChangeTitleButton />
-      <PrimeNumberButton />
-      <button>Fill form</button>
+      <ChangeColorButton color={props.backgroundColor} className="button" onPressButton={props.onChangeBackgroundColor}/>
+      <ChangeTitleButton color={props.backgroundColor} />
+      <PrimeNumberButton color={props.backgroundColor} />
+      <button style={{ backgroundColor: props.backgroundColor }}>Fill form</button>
       <div>
-        <button>Whatever</button>
+        <button style={{ backgroundColor: props.backgroundColor }}>Whatever</button>
       </div>
     </div>
   );

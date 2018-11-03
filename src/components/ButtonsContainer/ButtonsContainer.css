@@ -11,11 +11,10 @@
 button {
   padding: 1em 1.5em;
   color: #ffffff;
-  background-color:  #16a085;
   border-style: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: opacity .5s; 
+  transition: opacity .5s, background-color .5s; 
 }
 
 button:hover {

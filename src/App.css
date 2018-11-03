@@ -3,8 +3,8 @@
 }
 
 body {
-  background-color: #16a085;
   color: #fff;
+  transition: background-color .5s;
 }
 
 .App {

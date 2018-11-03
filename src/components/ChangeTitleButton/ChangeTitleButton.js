@@ -3,7 +3,7 @@ import React from 'react';
 const ChangeTitleButton = React.memo(function ChangeTitleButton(props) {
   return (
     <div>
-      <button>Modify title</button>
+      <button style={{ backgroundColor: props.color }}>Modify title</button>
     </div>
   );
 });
