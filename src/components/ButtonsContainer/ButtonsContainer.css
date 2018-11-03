@@ -1,0 +1,23 @@
+.ButtonsContainer {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 4em 3em;
+  border-radius: 20px;
+  box-shadow: 2px 2px 1px #000000;
+}
+
+button {
+  padding: 1em 1.5em;
+  color: #ffffff;
+  background-color:  #16a085;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity .5s; 
+}
+
+button:hover {
+  opacity: .7;
+}

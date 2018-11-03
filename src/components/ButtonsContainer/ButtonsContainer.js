@@ -1,4 +1,5 @@
 import React from 'react';
+import './ButtonsContainer.css'; // <-- CSS of this component
 
 //Importing the individual buttons components
 import ChangeColorButton from '../ChangeColorButton/ChangeColorButton';
@@ -7,8 +8,8 @@ import PrimeNumberButton from '../PrimerNumberButton/PrimeNumberButton';
 
 const ButtonsContainer = (props) => {
   return (
-    <div>
-      <ChangeColorButton />
+    <div className="ButtonsContainer">
+      <ChangeColorButton className="button" />
       <ChangeTitleButton />
       <PrimeNumberButton />
       <button>Fill form</button>

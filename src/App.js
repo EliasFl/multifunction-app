@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'; // <-- CSS of App.js
 
 //Importing the ButtonContainer component
 import ButtonsContainer from './components/ButtonsContainer/ButtonsContainer';
@@ -6,9 +7,9 @@ import ButtonsContainer from './components/ButtonsContainer/ButtonsContainer';
 class App extends React.Component {
   render(){
     return (
-      <div>
-        <h1>Elias</h1>
-        <h3>eliasflores13@outlook.com</h3>
+      <div className="App">
+        <h1 className="title">Elias</h1>
+        <h4 className="subtitle">eliasflores13@outlook.com</h4>
         <ButtonsContainer />
       </div>
     );
