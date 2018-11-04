@@ -24,3 +24,13 @@ export function getNextPrimeNumber(num) {
   } 
   return getNextPrimeNumber(nextNum);
 }
+
+export function alternateLetters(string) {
+  let stringSplitted = string.split('');
+  stringSplitted.push(stringSplitted.shift());
+  return stringSplitted.join('');
+}
+
+export function repeatAccion(accion, interval) {
+  setInterval(accion, interval);
+}

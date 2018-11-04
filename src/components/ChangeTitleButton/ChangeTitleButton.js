@@ -1,11 +1,16 @@
 import React from 'react';
 
-const ChangeTitleButton = React.memo(function ChangeTitleButton(props) {
+const MoveTitleButton = (props) => {
   return (
     <div>
-      <button style={{ backgroundColor: props.color }}>Modify title</button>
+      <button 
+        style={{ backgroundColor: props.color }}
+        onClick={props.onMoveTitle}
+      >
+        Move
+      </button>
     </div>
   );
-});
+}
 
-export default ChangeTitleButton;
+export default MoveTitleButton;

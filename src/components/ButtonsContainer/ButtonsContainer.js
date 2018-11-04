@@ -3,7 +3,7 @@ import './ButtonsContainer.css'; // <-- CSS of this component
 
 //Importing the individual buttons components
 import ChangeColorButton from '../ChangeColorButton/ChangeColorButton';
-import ChangeTitleButton from '../ChangeTitleButton/ChangeTitleButton';
+import MoveTitleButton from '../ChangeTitleButton/ChangeTitleButton';
 import PrimeNumberButton from '../PrimerNumberButton/PrimeNumberButton';
 
 const ButtonsContainer = (props) => {
@@ -11,7 +11,10 @@ const ButtonsContainer = (props) => {
     <div className="ButtonsContainer">
       <ChangeColorButton color={props.backgroundColor} className="button" onPressButton={props.onChangeBackgroundColor}/>
       <PrimeNumberButton color={props.backgroundColor} />
-      <ChangeTitleButton color={props.backgroundColor} />
+      <MoveTitleButton 
+        color={props.backgroundColor}
+        onMoveTitle={props.onMoveTitle} 
+      />
       <button style={{ backgroundColor: props.backgroundColor }}>Fill form</button>
       <div>
         <button style={{ backgroundColor: props.backgroundColor }}>Whatever</button>
