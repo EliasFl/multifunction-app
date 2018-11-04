@@ -33,3 +33,11 @@ input.form-control, select.form-control {
 .form-footer button {
   background-color: green;
 }
+
+@media (max-width: 768px) {
+  .FormContainer {
+    max-width: 70%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
