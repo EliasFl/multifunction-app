@@ -1,0 +1,35 @@
+.FormContainer {
+  width: 600px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1em 3em;
+  border-radius: 20px;
+  box-shadow: 2px 2px 1px #000000;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input.form-control, select.form-control {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-footer button {
+  background-color: green;
+}

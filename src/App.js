@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css'; // <-- CSS of App.js
-import {getRandomColor, alternateLetters, repeatAccion} from './helpers/helpers';
+import { Route } from 'react-router-dom';
 
-//Importing the ButtonContainer component
+//Helpers
+import {getRandomColor, alternateLetters} from './helpers/helpers';
+
+//Importing the components
 import ButtonsContainer from './components/ButtonsContainer/ButtonsContainer';
+import FormContainer from './components/FormContainer/FormContainer';
 
 class App extends React.Component {
   state = {
@@ -44,11 +48,15 @@ class App extends React.Component {
       <div className="App">
         <h1 className="title">{this.state.title}</h1>
         <h4 className="subtitle">eliasflores13@outlook.com</h4>
-        <ButtonsContainer
-          onChangeBackgroundColor={this.changeBackgroundColor}
-          onMoveTitle={this.moveTitle}
-          backgroundColor={this.state.backgroundColor}
-        />
+        
+        <Route exact path="/" render={() => (
+          <ButtonsContainer
+            onChangeBackgroundColor={this.changeBackgroundColor}
+            onMoveTitle={this.moveTitle}
+            backgroundColor={this.state.backgroundColor}
+          />
+        )} />
+        <Route path="/form" component={FormContainer} />
       </div>
     );
   }

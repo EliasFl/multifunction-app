@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ButtonsContainer.css'; // <-- CSS of this component
 
 //Importing the individual buttons components
@@ -9,15 +10,17 @@ import PrimeNumberButton from '../PrimerNumberButton/PrimeNumberButton';
 const ButtonsContainer = (props) => {
   return (
     <div className="ButtonsContainer">
-      <ChangeColorButton color={props.backgroundColor} className="button" onPressButton={props.onChangeBackgroundColor}/>
+      <ChangeColorButton color={props.backgroundColor} onPressButton={props.onChangeBackgroundColor}/>
       <PrimeNumberButton color={props.backgroundColor} />
       <MoveTitleButton 
         color={props.backgroundColor}
         onMoveTitle={props.onMoveTitle} 
       />
-      <button style={{ backgroundColor: props.backgroundColor }}>Fill form</button>
-      <div>
-        <button style={{ backgroundColor: props.backgroundColor }}>Whatever</button>
+      <Link className="button" to="/form" style={{ backgroundColor: props.backgroundColor }}>
+        Introduction form
+      </Link>
+      <div className="hidden-button">
+        <button onClick={() => window.alert('whatever')} style={{ backgroundColor: props.backgroundColor }}>Whatever</button>
       </div>
     </div>
   );
