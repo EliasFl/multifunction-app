@@ -19,13 +19,13 @@ class FormContainer extends Component {
     });
   }
 
-  validSubmit = () => {
+  canSubmitData = () => {
     return this.state.name !== "" || this.state.age > 0;
   };
 
   handleSubmit = (event) => {
     event.preventDefault();
-    if (this.validSubmit()) {
+    if (this.canSubmitData()) {
       alert(`My name is ${this.state.name}, I'm ${this.state.age} years old and I like ${this.state.color}`);
     } else {
       alert("Make sure you fill the form inputs!");
