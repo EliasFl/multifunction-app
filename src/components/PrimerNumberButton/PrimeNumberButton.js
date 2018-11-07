@@ -8,7 +8,7 @@ class PrimeNumberButton extends Component {
     number: 1,
   }
 
-  handleGetNextPrimeNumber = () => {
+  getNextPrimeNumber = () => {
     this.setState((prevState) => {
       return {
         number: getNextPrimeNumber(prevState.number),
@@ -21,7 +21,7 @@ class PrimeNumberButton extends Component {
       <div>
         <button 
           style={{ backgroundColor: this.props.color }}
-          onClick={this.handleGetNextPrimeNumber}
+          onClick={this.getNextPrimeNumber}
         >
           {this.state.number}
         </button>
