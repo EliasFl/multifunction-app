@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ChangeColorButton = React.memo(function ChangeColorButton(props) {
+const ChangeColorButton = React.memo(function ChangeColorButton({onPressButton, color}) {
   return (
-    <div onClick={props.onPressButton}>
-      <button style={{ backgroundColor: props.color }}>
+    <div onClick={onPressButton}>
+      <button style={{ backgroundColor: color }}>
         Change color
       </button>
     </div>

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const MoveTitleButton = (props) => {
+const MoveTitleButton = ({color, onMoveTitle}) => {
   return (
     <div>
       <button 
-        style={{ backgroundColor: props.color }}
-        onClick={props.onMoveTitle}
+        style={{ backgroundColor: color }}
+        onClick={onMoveTitle}
       >
         Move
       </button>
